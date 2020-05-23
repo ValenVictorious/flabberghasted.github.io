@@ -6,3 +6,6 @@ data = data + get_data
 if (get_data != "") {
   add_data();
 }
+if (data != "") {
+  document.getElementById("title").innerHTML = data
+};

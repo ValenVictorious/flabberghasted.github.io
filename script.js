@@ -9,6 +9,8 @@ console.log(post_name)
 function get_post(){
   if (post_name != "" && post_content.innerHTML != "") {
     post = [post_name, post_content]
+    document.getElementById("post_content").style.color = "black"
+    document.getElementById("post_name").style.color = "black"
   } else if (post_name != "" && post_content === ""){
     document.getElementById("post_content").innerHTML = "enter post content";
     document.getElementById("post_content").style.color = "red";
