@@ -21,15 +21,15 @@
       <P id="content"></p>
 
       <script>
-        document.getElementById("post").innerHTML = "Create Your Post Below!"
+        document.getElementById("post").innerHTML = "Create Your Post"
       </script>
       <button  class="btn"id ="post_submit">Submit</button>
       <div>
         <h3 id="display_name"></h3>
         <p id="display_content"></p>
         <script>
-          let post = document.getElementById("post_submit");
-          post.addEventListener("click", function() { 
+          let viewpost = document.getElementById("post_submit");
+          viewpost.addEventListener("click", function() { 
           document.getElementById("display_name").innerHTML = document.getElementById("post_name").innerHTML;
           document,getElementById("display_content").innerHTML = document.getElementById("post_content").innerHTML;
           });
