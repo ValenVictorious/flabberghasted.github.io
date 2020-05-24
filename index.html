@@ -28,9 +28,12 @@
         <h3 id="display_name"></h3>
         <p id="display_content"></p>
         <script>
-          document.getElementById("display_name").innerHTML = document.getElementById("post_name").innerHTML
-          document,getElementById("display_content").innerHTML = document.getElementById("post_content").innerHTML
-        </script>
+          let post = document.getElementById("post_submit");
+          post.addEventListener("click", function() { 
+          document.getElementById("display_name").innerHTML = document.getElementById("post_name").innerHTML;
+          document,getElementById("display_content").innerHTML = document.getElementById("post_content").innerHTML;
+          });
+          </script>
       </div>
 
 
